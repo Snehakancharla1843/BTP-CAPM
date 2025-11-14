@@ -1,0 +1,92 @@
+@server=http://localhost:4004
+@username=alice
+@password=
+
+
+###  Service Document
+# @name Employee_GET
+GET {{server}}/odata/v4/employee
+Authorization: Basic {{username}}:{{password}}
+
+###Get  Service Metadata Document
+# @name Employee_GET
+GET {{server}}/odata/v4/employee/$metadata
+Authorization: Basic {{username}}:{{password}}
+
+### Get Employee Data
+# @name Employee_GET
+GET {{server}}/odata/v4/employee/Employee
+Authorization: Basic {{username}}:{{password}}
+
+### Get EMployeee data with name starts with S
+# @name Employee_GET
+GET {{server}}/odata/v4/employee/Employee?$filter=startswith(nameFirst,'S')
+Authorization: Basic {{username}}:{{password}}
+
+
+### Employee Salary < 50000 and curency USD
+# @name Employee_POST
+POST {{server}}/odata/v4/employee/Employee
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+
+  "nameFirst": "Akshaya",
+  "nameMiddle": "A",
+  "nameLast": "Kancharla",
+  "nameInitials": "JD",
+  "Gender": "M",
+  "Language": "E",
+  "phoneNumber": "+12243740000",
+  "Email": "john.doe@itelo.info",
+  "loginName": "john01",
+  "currency": {
+    "code": "USD"
+  },
+  "salaryAmount": 20000,
+  "accountNumber": "ACCT0001",
+  "bankId": "BANK0001",
+  "bankName": "Bank of America"
+
+}
+
+
+### Employee
+# @name Employee_PATCH
+PATCH {{server}}/odata/v4/employee/Employee/51caecd9-8437-4b4b-b191-966ea15f721b
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+   
+  "nameFirst": "Akshaya",
+  "nameMiddle": "Sree",
+  "nameLast": "Kancharla",
+  "nameInitials": "SS",
+  "Gender": "M",
+  "Language": "E",
+  "phoneNumber": "+12243745249",
+  "Email": "sneha.kancharla@itelo.info",
+  "loginName": "john01",
+  "currency": {
+    "code": "USD"
+  },
+  "salaryAmount": 62500.50,
+  "accountNumber": "ACCT18621261",
+  "bankId": "BANK1862",
+  "bankName": "Bank of America"
+}
+
+
+### Employee
+# @name Employee_DELETE
+DELETE {{server}}/odata/v4/employee/Employee/02BD2137-0890-1EEA-A6C2-BB55C197A7FB
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### Currencies
+# @name Currencies_GET
+GET {{server}}/odata/v4/employee/Currencies
+Authorization: Basic {{username}}:{{password}}

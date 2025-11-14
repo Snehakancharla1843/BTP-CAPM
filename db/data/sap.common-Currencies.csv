@@ -1,0 +1,11 @@
+code,symbol,minorUnit,name,descr
+USD,$,2,US Dollar,Currency of the United States
+EUR,€,2,Euro,Common currency of the Eurozone
+INR,₹,2,Indian Rupee,Currency of India
+GBP,£,2,British Pound,Currency of the United Kingdom
+JPY,¥,0,Japanese Yen,Currency of Japan
+AUD,A$,2,Australian Dollar,Currency of Australia
+CAD,C$,2,Canadian Dollar,Currency of Canada
+CHF,Fr.,2,Swiss Franc,Currency of Switzerland
+CNY,¥,2,Chinese Yuan,Currency of China
+NZD,NZ$,2,New Zealand Dollar,Currency of New Zealand
