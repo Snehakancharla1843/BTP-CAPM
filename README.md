@@ -1,8 +1,10 @@
-# Getting Started
+# BTP-CAPM
 
-Welcome to your new project.
+CAPM Projects – Employee service and other CAP exercises.
 
-It contains these folders and files, following our recommended project layout:
+## Getting Started
+
+This project contains these folders and files, following the recommended CAP layout:
 
 File or Folder | Purpose
 ---------|----------
@@ -12,14 +14,11 @@ File or Folder | Purpose
 `package.json` | project metadata and configuration
 `readme.md` | this getting started guide
 
-
 ## Next Steps
 
 - Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
-
+- Start adding content, for example, a `db/schema.cds`.
 
 ## Learn More
 
-Learn more at https://cap.cloud.sap/docs/get-started/.
+Learn more at https://cap.cloud.sap/docs/get-started/.
